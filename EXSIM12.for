@@ -449,7 +449,7 @@ c     End of Generate some logarithmically-spaced frequencies
         if (freq_out(i) .lt. 0.0 .or. freq_out(i) .ge. 10.0) then
            write(f4head(i)(1:5),'(f5.2)') freq_out(i)
         else  
-           write(f4head(i)(2:5),'(f4.2)') freq_out(i)
+           write(f4head(i)(2:5),'(f4.1)') freq_out(i)
         end if
       end do
         
