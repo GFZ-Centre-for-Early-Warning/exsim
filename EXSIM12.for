@@ -212,7 +212,7 @@ c     Other input files for crustal amplifications, site amplifications and empi
 *                    in a commented version of this code that we have (EXSIM11) but not all such comments are retained below.
 
 
-      use dflib                                                                 !Modified/added by KA, Aug.2010
+*      use dflib                                                                 !Modified/added by KA, Aug.2010
 
       real wave(:), totalWave(:), vel_total(:), husid(:)
       allocatable :: wave, totalWave, vel_total, husid 
