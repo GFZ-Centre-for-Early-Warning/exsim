@@ -456,7 +456,7 @@ c     End of Generate some logarithmically-spaced frequencies
       f_dur_75_05 = ' '
       f_dur_75_05 = f_stem(1:nc_f_stem)//'_dur_75_05_dist_psa.out'
       call trim_c(f_dur_75_05, nc_f_dur_75_05)
-      open(nu_dur_75_05, file='./other/'//f_dur_75_05(1:nc_f_dur_75_05),        !Modified/added by KA, Feb.2012
+      open(nu_dur_75_05, file='.\other\'//f_dur_75_05(1:nc_f_dur_75_05),        !Modified/added by KA, Feb.2012
      :             status='unknown')
       write(nu_dur_75_05,'(2x,a,1x,a,2x,a,2x,a,1x,a,1x,a,
      :             1x,a, 1x,a,1x,a,1x,a,1x,a,5x,a, 3x,a,10(7x,a4, 3x,a8)  
@@ -751,7 +751,7 @@ c     accelerogram and model parameters are saved only once
               write(chr3_,'(i3.3)')isim                                         !Added by Karen for getting acc output of individual simulations (20120415)
               facc = trim(f_stem)//'S'//chr3//'iter'//chr3_//'.acc'             !Added by Karen for getting acc output of individual simulations (20120415)
               call trim_c(facc,nc_facc)
-              open (ioAcc,file='./ACC/'//facc(1:nc_facc),                       !Added by Karen for getting acc output of individual simulations (20120415)
+              open (ioAcc,file='.\ACC\'//facc(1:nc_facc),                       !Added by Karen for getting acc output of individual simulations (20120415)
      :              status='unknown')
               call writeAcc(ioAcc, totalWave, npw2TotalWave, pga,               !Added by Karen for getting acc output of individual simulations (20120415)
      :                 isim,isite,HypoDistance,d_cd2f, fpar,                    !Added by Karen for getting acc output of individual simulations (20120415)
@@ -775,7 +775,7 @@ c     accelerogram and model parameters are saved only once
               write(fhusid(nc_f_stem+9:nc_f_stem+11),'(i3.3)') isite
               write(fhusid(nc_f_stem+16:nc_f_stem+18),'(i3.3)') isim
               call trim_c(fhusid, nc_fhusid)         
-              open (ioHus,file='./other/'//fhusid(1:nc_fhusid),                 !Modified/added by KA to direct output in folder "other", Feb.2012
+              open (ioHus,file='.\other\'//fhusid(1:nc_fhusid),                 !Modified/added by KA to direct output in folder "other", Feb.2012
      1                  status='unknown')
               
               dur_75_05_sim1 =  float(j75-j05)*dt 
@@ -811,7 +811,7 @@ c     accelerogram and model parameters are saved only once
             ftmp = ' '
             ftmp = trim(f_stem)//'S'//chr3//'iter'//chr3_//'.tmp'               !Added by Karen for getting spectral output of every simulation (20120430)
             call trim_c(ftmp,nc_ftmp)                                           !Added by Karen for getting spectral output of every simulation (20120430)
-            open (iotmp,file='./PSA/'//ftmp(1:nc_ftmp),status='unknown')        !Added by Karen for getting spectral output of every simulation (20120430)
+            open (iotmp,file='.\PSA\'//ftmp(1:nc_ftmp),status='unknown')        !Added by Karen for getting spectral output of every simulation (20120430)
                                                                                 !Added by Karen for getting spectral output of every simulation (20120430)
             call writePSA_FA(iotmp, freq,PGA,PGV,                               !Added by Karen for getting spectral output of every simulation (20120430)
      :           psa,nfreq,isim,0,damp,amag,                                    !Added by Karen for getting spectral output of every simulation (20120430)
@@ -940,7 +940,7 @@ c     accelerogram and model parameters are saved only once
         write(fpsa(nc_f_stem+10:nc_f_stem+12),'(i3.3)') isite
         call trim_c(fpsa, nc_fpsa)         
 c        open (ioPsa,file=fpsa(1:nc_fpsa),status='unknown')                      !Modified/added by KA, Mar.2012 to include average spectra in PSA folder
-        open (ioPsa,file='./PSA/'//fpsa(1:nc_fpsa),status='unknown')            !Modified/added by KA, Mar.2012 to include average spectra in PSA folder
+        open (ioPsa,file='.\PSA\'//fpsa(1:nc_fpsa),status='unknown')            !Modified/added by KA, Mar.2012 to include average spectra in PSA folder
 
         call writePSA_FA(ioPSA, freq,avgavgPGA,avgavgPGV,
      :       avgavgPSA,nfreq,nsims,1,damp,amag,                                 !Modified/added by KA, Mar.2012 to include average spectra in PSA folder
@@ -965,7 +965,7 @@ c        open (ioPsa,file=fpsa(1:nc_fpsa),status='unknown')                     
 c
 c
 c
-      open (ioPar,file='./other/'//fpar(1:nc_fpar),status='unknown')            !Karen&Katsu2010/11/10-Moved to this section to allow all parameters to be reported properly
+      open (ioPar,file='.\other\'//fpar(1:nc_fpar),status='unknown')            !Karen&Katsu2010/11/10-Moved to this section to allow all parameters to be reported properly
 
       call writePar(ioPar,                                                      !Karen&Katsu2010/11/10-Moved to this section to allow all parameters to be reported properly
      :               FaultStrike,FaultDip,h,                                    !Karen&Katsu2010/11/10-Moved to this section to allow all parameters to be reported properly
