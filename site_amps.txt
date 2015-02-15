@@ -1,0 +1,4 @@
+! Site amplification filter file
+1              ! nfrequencies
+1.0000    1.00 ! frequency, amplification
+               ! no amplification for this case.

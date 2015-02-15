@@ -1,0 +1,70 @@
+         modeling parameters     
+Fault Strike              =     0.00
+Fault dip                 =    90.00
+Fault depth to upper edge =     3.00
+Fault Length              =    30.00
+Fault Width               =    10.00
+ratio of rupture to s-wave velocity =     0.80
+FaultLat                  =     0.00
+FaultLon                  =     0.00
+No.of subs along strike   =       15
+No.of subs along dip      =        5
+subfault length           =     2.00
+subfault width            =     2.00
+i_rise_time (1=orig,2=1/f0) =  1
+iseed, nsims =    182455829    3
+-----------------------------------------------
+input hypocenter at position    =   4.500E+00  1.500E+00
+input hypocenter at subfault    =    3   1
+n_hypocenters    =    1
+Mag.                      =     6.50
+-----------------------------------------------
+dt (sec)                  =   0.0020
+beta (km/s)               =     3.70
+density (rho), gr/cm3     =     2.80
+pulsing Percentage        =    50.00
+iflagscalefactor (1=vel^2; 2=acc^2;  3=asymptotic acc^2 (dmb)) = 2
+flocut, nslope            =   0.050  8
+iflagfas_avg              = 3
+iflagpsa_avg              = 2
+stress parameter (bars)   =   130.00
+kappa                     =   0.0350
+-----------------------------------------------
+         Corner Frequency    
+Dynamic Corner Frequency Flag is  ON =    1
+-----------------------------------------------
+ Qmin,          Q0,            eta,         = 
+   60.00000       180.0000      0.4500000    
+ Path duration: ndur_hinges, rpathdur, pathdur, durslope: 
+  2
+   0.0   0.00
+  10.0   0.00
+  0.050
+ gspread: i, nsprd_segs, r_ref, rlow, a_s
+           1           2   1.000000       1.000000      -1.000000    
+           2           2   1.000000       40.00000     -0.5000000    
+-----------------------------------------------
+window applied               = Saragoni-Hart
+Saragoni-Hart epsilon        =        0.2000
+Saragoni-Hart eta            =        0.2000
+-----------------------------------------------
+amplification as in file crustal_amps.txt              
+amplification as in file site_amps.txt                 
+amplification as in file empirical_amps.txt            
+-----------------------------------------------
+-----------------------------------------------
+         Analytical Pulse parameters     
+-----------------------------------------------
+Analytical Flag is  OFF   =     0
+ 
+tpadl, tpadt, dt(sec)                     :    50.000    20.000     0.002
+For site   1 siteLocation coordinates 1&2 =      0.36     0.01
+For site   2 siteLocation coordinates 1&2 =      0.72     0.01
+Site may have been moved to midpoint or end of surface projection of upper edge of fault
+ 
+ The slip distribution is: 
+   0.430     0.396     0.396     0.246     0.075     0.371     0.036     0.397     0.330     1.019     0.451     0.521     0.426     0.555     0.918
+   0.095     0.676     0.653     0.271     0.282     0.255     1.024     0.494     0.724     0.286     1.015     0.510     0.316     0.608     0.855
+   0.781     0.069     0.914     0.787     0.927     0.503     0.702     0.979     0.008     0.650     0.761     0.052     0.940     0.709     0.517
+   0.547     0.747     0.537     0.778     0.284     0.874     0.792     0.966     0.377     0.172     0.241     0.480     0.796     0.944     0.591
+   0.961     0.693     0.673     0.939     0.533     0.858     0.063     0.935     0.275     0.760     0.094     0.544     0.547     0.184     0.034

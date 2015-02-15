@@ -1,0 +1,3 @@
+  isite ihyp  i0  j0 dur_75_05(sec) arias(cm/s) sitecoord(1) sitecoord(2) isitecoordflag site_lat_degrees site_lon_degrees     d_jb   d_cd2f       freq   psa-1.00       freq   psa99.00       freq   psa00.50       freq   psa05.00
+      1    1   3   1           1.26  4.171E+01         0.359        0.010              1            0.359            0.010     9.79    10.24 -1.000E+00  2.243E+01  9.900E+01  2.909E+02  5.000E-01  8.630E+01  5.000E+00  6.645E+02
+      2    1   3   1           2.19  3.116E+00         0.719        0.010              1            0.719            0.010    49.47    49.56 -1.000E+00  6.275E+00  9.900E+01  7.209E+01  5.000E-01  3.092E+01  5.000E+00  1.358E+02
