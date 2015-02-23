@@ -249,7 +249,7 @@ c     Other input files for crustal amplifications, site amplifications and empi
      *          xrmin(10), xrmax(10)
       dimension siteLocation(300,2)
       character f_crustal_amps*30,f_site_amps*30,f_empirical_amps*30            !Modified/added by KA, Aug.2010
-	character InputFileName*30
+	character InputFileName*256
       character f_stem*120
       character fpar*120, facc*120, fpsa*120, f_h_f0*120, fhusid*120,
      :          f_times*120, f_dur_75_05*120, f_dist_psa*120
